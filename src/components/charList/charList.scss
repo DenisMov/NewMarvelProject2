@@ -108,10 +108,27 @@
 @media (max-width: 500.98px) {
   .char {
     &__content {
-      grid-template-columns: 46% 45%;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    &__list {
+      width: 200px;
+      margin: 40px auto;
     }
   }
 }
+@media (max-width: 400.98px) {
+  .char {
+    &__content {
+      align-items: center;
+    }
+    &__info {
+      width: 100%;
+    }
+  }
+}
+
 // @media (max-width: 400.98px) {
 //   .char {
 //     &__content {
